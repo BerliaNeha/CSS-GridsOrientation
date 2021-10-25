@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&display=swap");
+
+body {
+  background-color: black;
+  width: 100%;
+  font-family: "Cormorant", serif;
+  color: white;
+  min-height: auto;
+}
+
+.navFlexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  margin-top: 2%;
+  list-style-type: none;
+  display: block;
+}
+
+.aboutLink {
+  writing-mode: vertical-lr;
+}
+
+.about {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 60vh;
+}
+
+h2,
+p {
+  display:inline;
+}
+
+a {
+  /* text-decoration: none; */
+  color: white;
+  padding: 5px;
+}
+
+.alignAfter p,
+.flexcontainer2 p {
+  margin-left: 20px;
+}
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.year{
+  writing-mode: vertical-lr;
+  margin-left: -60px;
+  padding-bottom: 10px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+.contact h2{
+    margin-left: 10%;
+}
+
+.form {
+    margin-top: 3%;
+    margin-left: 10%;
+    
+}
+
+.namespace{
+  margin-left: 5px ;
+}
+
+input{
+    border: none;
+    outline: unset;
+    background: transparent;
+    border-bottom: 1px solid white;
+   
+    
+}
+
+
+@media (min-width: 768px) {
+  .tabletcontainer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .about{
+    border:2px solid rgb(25,25,25);
+    width:50%;
+  }
+  .contact{
+    border:2px solid rgb(25,25,25);
+    width:50%;
+  }
+
+}
+
+@media (min-width: 992px){
+  body{
+    background-color: rgb(227,227,227);
+    color: rgb(25,25,25);
+  }
+  a{
+    color: rgb(25,25,25);
+  ;
+  }
+ 
+}
+
+
