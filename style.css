@@ -1,11 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Cormorant&display=swap");
 
 body {
   background-color: black;
@@ -13,17 +12,22 @@ body {
   font-family: "Cormorant", serif;
   color: white;
   min-height: auto;
+  padding-top: 50px;
 }
 
-nav{
-  width:100%;
-  position:fixed;
-  background-color:black;
+nav {
+  width: 100%;
+  position: fixed;
+  top: 10px;
+}
+
+.navfooter {
+  bottom: 30px;
+  top: unset;
 }
 .navFlexContainer {
   display: flex;
   justify-content: space-between;
-  
 }
 
 li {
@@ -45,9 +49,15 @@ li {
   height: 60vh;
 }
 
+/* .flexcontainer2 {
+  position: absolute;
+} */
+
 h2,
 p {
   display: inline;
+  /* position: relative;
+  bottom: -200px; */
 }
 
 a {
@@ -56,7 +66,7 @@ a {
   padding: 5px;
 }
 
-.flexcontainer2, 
+.flexcontainer2,
 .alignAfter {
   display: flex;
   justify-content: space-evenly;
@@ -90,21 +100,13 @@ a {
   margin-left: 10%;
 }
 
-
-/* .contact form {
-
-} */
 .form {
   margin-top: 3%;
   margin-left: 10%;
+  margin-bottom: 3rem;
 }
-/* 
-.contact label[for="name"] {
 
-}
-.contact input[id="name"] {
-
-} */
+/* .contact label[for="name"] .contact input[id="name"] */
 
 .namespace {
   margin-left: 5px;
@@ -121,7 +123,6 @@ input {
   .tabletcontainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
   }
   .about {
     border: 2px solid rgb(25, 25, 25);
@@ -133,8 +134,9 @@ input {
     border: 2px solid rgb(25, 25, 25);
     width: 40%;
   }
- .form {
-  margin-top: 3rem;
+  .form {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
   }
 }
 
@@ -149,4 +151,27 @@ input {
   .tabletcontainer {
     display: block;
   }
+  .contact,
+  .about {
+    border: none;
+    width: 80%;
+  }
+
+  .contact {
+    margin-top: 15%;
+  }
+
+  .about {
+    padding-top: 10%;
+  }
+
+  /* .flexcontainer2 h2, p{
+    padding-right: 400px;
+  }
+
+  .flexcontainer2 p{
+   padding-right: 900px;
+  } */
 }
+
+
